@@ -29,3 +29,13 @@ The API version will differ depending on the version of OneFS you want to commun
 |        10       |     |      9.0.0.0      |
 |        11       |     |      9.1.0.0      |
 |        12       |     |      9.2.0.0      |
+
+When working with the S3 API calls, additional environment variables need to be configured.
+
+| Variables        | Description                                                             |
+| ---------------- | ----------------------------------------------------------------------- |
+| s3_endpoint      | The full URL with FQDN or IP address and port of the PowerScale cluster |
+| s3_access_id     | S3 account ID that is created on the PowerScale cluster				 |
+| s3_access_secret | S3 account secret that is created on the PowerScale cluster             |
+
+The s3_endpoint value should be in one of 2 forms: http://fqdn_or_ip:9020 or https://fqdn_or_ip:9021
